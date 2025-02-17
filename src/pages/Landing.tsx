@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import AboutUs from "@/components/AboutUs";
 import { Navbar } from "@/components/nav/Navbar";
 import ContactSection from "@/components/Contact";
+import { Footer } from "@/components/nav/Footer";
 
 // Public company logos (replace with actual URLs)
 const partnerLogos = [
@@ -161,6 +162,7 @@ export default function Landing() {
       <AboutUs/>
     </div>
     <ContactSection/>
+    <Footer/>
     </>
   );
 }

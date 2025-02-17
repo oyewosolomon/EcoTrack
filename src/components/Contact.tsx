@@ -41,13 +41,13 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "info@BuildSmartsolutions.com",
-      link: "mailto:info@BuildSmartsolutions.com"
+      value: "info@ecotrack.com",
+      link: "mailto:info@ecotrack.com"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Address",
-      value: "123 FarmTech Lane, AgriCity, USA",
+      value: "123 ecotrack Lane, ecotrack, Nigeria",
       link: "#"
     }
   ];
@@ -81,7 +81,7 @@ const ContactSection = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-rows-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Full Name
@@ -108,18 +108,8 @@ const ContactSection = () => {
                   </div>
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Farm Size (acres)
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                      value={formData.farmSize}
-                      onChange={(e) => setFormData({...formData, farmSize: e.target.value})}
-                    />
-                  </div>
+                <div className="grid md:grid-cols-1 gap-6">
+                  
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
