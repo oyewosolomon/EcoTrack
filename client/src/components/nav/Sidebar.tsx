@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { BarChart3, Droplets, Trash2, FileCheck, LayoutDashboard } from "lucide-react";
 
 const navItems = [
-  { icon: LayoutDashboard, label: "Dashboard", href: "/" },
+  { icon: LayoutDashboard, label: "Dashboard", href: "/dashboard" },
   { icon: BarChart3, label: "Emissions", href: "/emissions" },
   { icon: Droplets, label: "Water Usage", href: "/water" },
   { icon: Trash2, label: "Waste Management", href: "/waste" },
