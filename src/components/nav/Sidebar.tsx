@@ -16,7 +16,7 @@ export default function Sidebar() {
   return (
     <div className="w-64 bg-sidebar border-r border-border flex flex-col">
       <div className="p-6">
-        <h1 className="text-2xl font-bold text-sidebar-foreground">EcoTrack</h1>
+        <a href="/" className="text-2xl font-bold text-sidebar-foreground">EcoTrack</a>
         <p className="text-sm text-sidebar-foreground/60">Environmental Monitoring</p>
       </div>
       <nav className="flex-1 px-4">

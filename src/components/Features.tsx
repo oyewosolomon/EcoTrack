@@ -26,6 +26,52 @@ export default function Landing() {
       {/* Features Section */}
       <section className="py-20 px-6 bg-muted/30">
         <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Environmental Monitoring & Compliance</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Comprehensive tools and analytics to manage your environmental impact effectively
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="mb-4 p-3 rounded-full bg-primary/10 w-fit">
+                  <BarChart3 className="h-6 w-6 text-primary"/>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Real-time Analytics</h3>
+                <p className="text-muted-foreground">
+                  Monitor emissions, water usage, and waste metrics in real-time with detailed analytics
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="mb-4 p-3 rounded-full bg-primary/10 w-fit">
+                  <FileCheck className="h-6 w-6 text-primary"/>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Compliance Tracking</h3>
+                <p className="text-muted-foreground">
+                  Stay compliant with automated monitoring and reporting of environmental regulations
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="mb-4 p-3 rounded-full bg-primary/10 w-fit">
+                  <Leaf className="h-6 w-6 text-primary"/>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Sustainability Goals</h3>
+                <p className="text-muted-foreground">
+                  Track and achieve your environmental sustainability targets with ease
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Comprehensive Environmental Management</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
