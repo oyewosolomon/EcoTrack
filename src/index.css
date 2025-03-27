@@ -29,12 +29,30 @@
     --chart-3: 240 4.8% 95.9%;
     --chart-4: 0 84.2% 60.2%;
     --chart-5: 240 3.8% 46.1%;
+    --font-lexend: 'Lexend', sans-serif;
+    --font-sans: 'ui-sans-serif', Arial, sans-serif;
   }
 
   * {
     @apply border-border;
   }
 
+    /* Apply Lexend to all text */
+    body {
+      font-family: var(--font-sans);
+      font-weight: 400;
+      font-variation-settings: 'wght' 400;
+    }
+  
+    /* Optimized heading weights */
+    h1, h2, h3 {
+      font-variation-settings: 'wght' 600;
+      letter-spacing: -0.015em;
+    }
+  
+    h4, h5, h6 {
+      font-variation-settings: 'wght' 500;
+    }
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }

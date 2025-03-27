@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import { 
-  Phone, 
-  Mail, 
-  MapPin, 
   MessageSquare, 
   Calendar, 
   Send,
@@ -31,29 +28,8 @@ const ContactSection = () => {
     setTimeout(() => setFormStatus('success'), 1500);
   };
 
-  const contactInfo = [
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: "Phone",
-      value: "+1 (800) 123-4567",
-      link: "tel:+18001234567"
-    },
-    {
-      icon: <Mail className="w-6 h-6" />,
-      title: "Email",
-      value: "info@ecotrack.com",
-      link: "mailto:info@ecotrack.com"
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Address",
-      value: "123 ecotrack Lane, ecotrack, Nigeria",
-      link: "#"
-    }
-  ];
-
   return (
-    <div className="relative  py-24 overflow-hidden" id='contact'>
+    <div className="relative py-24 overflow-hidden" id='contact'>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-0 right-0 w-96 h-96 bg-green-200 rounded-full filter blur-3xl" />
@@ -61,12 +37,9 @@ const ContactSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-       
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-           
-            
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Contact Form - Left Side */}
+          <div className="bg-white rounded-2xl p-8">
             {formStatus === 'success' ? (
               <div className="text-center py-12">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -109,7 +82,6 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="grid md:grid-cols-1 gap-6">
-                  
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
@@ -153,74 +125,46 @@ const ContactSection = () => {
             )}
           </div>
 
-          {/* Contact Information */}
+          {/* Right Side - Visual content replacing contact cards */}
           <div className="space-y-8">
-            {/* Contact Cards */}
-            <div className="grid sm:grid-cols-2 gap-6">
-              {contactInfo.map((info, index) => (
-                <a
-                  key={index}
-                  href={info.link}
-                  className="bg-white/80 backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-4">
-                    {info.icon}
+            {/* Image Section */}
+            <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden bg-gray-100">
+              {/* Replace with your actual image */}
+              <div 
+                className="w-full h-full bg-cover bg-center transition-transform duration-500 hover:scale-105"
+                style={{ backgroundImage: "url('/images/c.jpg')" }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-2">Get In Touch</h3>
+                    <p className="text-white/90">
+                      We're here to answer your questions and discuss how we can help.
+                    </p>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                    {info.title}
-                  </h4>
-                  <p className="text-gray-600">
-                    {info.value}
-                  </p>
-                </a>
-              ))}
-               <div className="bg-gradient-to-r from-primary to-primary/60 rounded-xl p-8 text-white">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                  <MessageSquare className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold mb-2">
-                    Live Chat Support
-                  </h4>
-                  <p className="text-green-100 mb-4">
-                    Have questions? Chat with our team now!
-                  </p>
-                  <button className="inline-flex items-center space-x-2 px-4 py-2 bg-white text-green-600 rounded-lg font-medium hover:bg-green-50 transition-colors">
-                    <Send className="w-4 h-4" />
-                    <span>Start Chat</span>
-                  </button>
                 </div>
               </div>
-            </div>
             </div>
 
-            {/* Socia Media */}
-            <div className="bg-gradient-to-r from-primary to-primary/60 rounded-xl p-5 text-white">
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                  <Facebook className="w-6 h-6" />
+            {/* Support Section */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white p-6 rounded-xl  hover:shadow-lg transition-shadow">
+                <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-3">
+                  <MessageSquare className="w-5 h-5" />
                 </div>
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-             
-                  <X className="w-6 h-6" />
+                <h4 className="font-medium text-gray-900 mb-1">Live Chat</h4>
+                <p className="text-sm text-gray-600">Instant messaging support</p>
+              </div>
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                  </svg>
                 </div>
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-             
-                  <Linkedin className="w-6 h-6" />
-                </div>
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-             
-                  <Instagram className="w-6 h-6" />
-                </div>
-                <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-             
-                  <Youtube className="w-6 h-6" />
-                </div>
-                <div>
-                </div>
+                <h4 className="font-medium text-gray-900 mb-1">FAQs</h4>
+                <p className="text-sm text-gray-600">Find quick answers</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>

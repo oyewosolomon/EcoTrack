@@ -31,22 +31,22 @@ export function Navbar() {
 
         {/* Navigation as (Desktop) */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="/features">
+          <a href="/#features">
             <span className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer">
               Features
             </span>
           </a>
-          <a href="/pricing">
+          <a href="/#pricing">
             <span className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer">
               Pricing
             </span>
           </a>
-          <a href="/about">
+          <a href="/#about">
             <span className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer">
               About
             </span>
           </a>
-          <a href="/contact">
+          <a href="/#contact">
             <span className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer">
               Contact
             </span>
