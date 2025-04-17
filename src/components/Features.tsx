@@ -5,7 +5,7 @@ import { Link } from "wouter";
 
 export default function Landing() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" id="features">
       {/* Hero Section */}
       <section className="relative py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">

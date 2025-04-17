@@ -11,7 +11,7 @@ export default function AboutUs() {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-primary/90 to-black py-20 md:py-28 px-6 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-primary/90 to-black py-20 md:py-28 px-6 overflow-hidden" id='about'>
       {/* Animated background grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000,transparent)]" />
       

@@ -36,11 +36,6 @@ export function Navbar() {
               Features
             </span>
           </a>
-          <a href="/#pricing">
-            <span className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer">
-              Pricing
-            </span>
-          </a>
           <a href="/#about">
             <span className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer">
               About
